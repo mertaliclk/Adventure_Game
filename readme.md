@@ -1,62 +1,78 @@
 # 🎲 Player Task Simulation Game
 
-This C++ program simulates a turn-based task game where predefined players (Justin, Taylor, Katy) are assigned tasks and roll dice to determine their final scores. It features file input, data structures, string manipulation, randomization, and interactive menu functionality.
+Welcome to the **Player Task Simulation Game**, a C++ program that simulates a turn-based task game where predefined players (Justin, Taylor, Katy) are assigned tasks and roll dice to determine their final scores. This project demonstrates file input/output, data structures, string manipulation, randomization, and interactive menu-driven functionality.
+
+---
 
 ## 📁 Project Structure
 
-```bash
 .
-├── main.cpp             # The main C++ file (your provided code)
-├── randgen.h           # Random number generator header (required for RandGen class)
-├── players.txt         # Input file for player names (one per line)
-├── playerdata.txt      # Input file with player task counts and base scores
-├── tasks.txt           # List of tasks that can be assigned to players
+├── main.cpp # Main C++ source file
+├── randgen.h # Header for RandGen random number generator
+├── players.txt # Player names input file (one name per line)
+├── playerdata.txt # Player task counts and base scores input file
+├── tasks.txt # List of tasks to assign to players
 
-🧩 Features
-Load player names from a file
+yaml
+Kodu kopyala
 
-Load each player's number of tasks and base score
+---
 
-Load a global list of task types
+## 🧩 Features
 
-Assign tasks to specific players
+- Load player names dynamically from a file  
+- Load each player's task count and base score  
+- Load a global list of task types  
+- Assign tasks to players (currently hardcoded)  
+- Simulate dice rolls to generate scores  
+- Display player statistics and task distributions  
+- Identify and display the highest scorer  
+- Show the count of dice rolls resulting in a six  
+- Interactive, console-based menu system  
 
-Simulate dice rolls to generate scores
+---
 
-View player stats, task distribution, and high score
+## 🚀 Getting Started
 
-Interactive console-based menu
+### Prerequisites
 
-🚀 Getting Started
-Prerequisites
-Ensure you have a C++ compiler that supports C++11 or higher. You also need to implement or include a randgen.h header for random number generation.
+- A C++ compiler supporting **C++11** or higher  
+- The `randgen.h` header file (for the RandGen class used for random number generation)  
 
-Compilation
+### Compilation
 
+```bash
 g++ -o game main.cpp
-
-
-Run
-
+Run the game
+bash
+Kodu kopyala
 ./game
-
 🧠 How It Works
-The user is prompted to input three file names.
+The program prompts the user to input the names of three files:
+
+players.txt for player names
+
+playerdata.txt for task counts and base scores
+
+tasks.txt for the list of tasks
 
 Players are loaded and initialized from players.txt.
 
-Each player's number of tasks and base score is read from playerdata.txt.
+Each player's task count and base score are read from playerdata.txt.
 
-Tasks are read from tasks.txt but task assignment is hardcoded for each player.
+Tasks are read from tasks.txt (task assignment is hardcoded).
 
-The game simulates a series of dice rolls per player, and tasks + rolls determine the final score.
+The game simulates dice rolls for each player, combining task assignment and roll results to compute final scores.
 
-A menu allows you to:
+An interactive menu allows the user to:
 
-Show player statistics
+View player statistics
 
-Display the highest scorer
+See the highest scorer
 
-Display the number of each task assigned
+Display task assignment counts
 
-Show how many times a 6 was rolled across all players
+Check how many times the number six was rolled across all players
+
+Feel free to fork, star, and contribute to this project!
+Happy gaming! 🎮
