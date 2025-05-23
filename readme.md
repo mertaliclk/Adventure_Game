@@ -40,14 +40,14 @@ Kodu kopyala
 - The `randgen.h` header file (for the RandGen class used for random number generation)  
 
 ### Compilation
-
-```bash
 g++ -o game main.cpp
-Run the game
-bash
-Kodu kopyala
+### Run the game
 ./game
-🧠 How It Works
+
+
+
+
+## 🧠 How It Works
 The program prompts the user to input the names of three files:
 
 players.txt for player names
