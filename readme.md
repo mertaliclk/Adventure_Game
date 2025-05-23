@@ -13,8 +13,6 @@ Welcome to the **Player Task Simulation Game**, a C++ program that simulates a t
 ├── playerdata.txt # Player task counts and base scores input file
 ├── tasks.txt # List of tasks to assign to players
 
-yaml
-Kodu kopyala
 
 ---
 
