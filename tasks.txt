@@ -1,0 +1,7 @@
+Treasure
+Trap
+Battle
+Rest
+Jackpot
+DoublePoints
+Nothing 
