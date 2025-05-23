@@ -1,76 +1,123 @@
-# 🎲 Player Task Simulation Game
+# Player Task Simulation Game
 
-Welcome to the **Player Task Simulation Game**, a C++ program that simulates a turn-based task game where predefined players (Justin, Taylor, Katy) are assigned tasks and roll dice to determine their final scores. This project demonstrates file input/output, data structures, string manipulation, randomization, and interactive menu-driven functionality.
+![C++](https://img.shields.io/badge/C++-11%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey)
 
----
+A turn-based task simulation game implemented in C++ that demonstrates file I/O operations, data structures, and interactive menu-driven functionality.
 
-## 📁 Project Structure
+## 📋 Overview
 
+This project simulates a turn-based task game where predefined players are assigned tasks and roll dice to determine their final scores. The game features dynamic player loading, task assignment, and score calculation through dice rolls.
+
+## 🎯 Project Goals
+
+- Demonstrate C++ file I/O operations
+- Implement data structure management
+- Create an interactive menu system
+- Simulate random number generation
+- Process and display game statistics
+
+## 📊 Key Features
+
+### Game Mechanics
+- Dynamic player loading from file
+- Task assignment system
+- Dice roll simulation
+- Score calculation and tracking
+- Highest scorer identification
+
+### Data Management
+- File-based player data loading
+- Task list management
+- Score tracking and statistics
+- Dice roll history
+- Task distribution analysis
+
+### User Interface
+- Interactive console menu
+- Player statistics display
+- Task distribution view
+- Dice roll statistics
+- Highest scorer display
+
+## 🛠️ Technologies Used
+
+- C++11 or higher
+- Standard Template Library (STL)
+- File I/O operations
+- Random number generation
+- String manipulation
+- Data structures
+
+## 📈 Project Structure
+
+```
 .
-├── main.cpp # Main C++ source file
-├── randgen.h # Header for RandGen random number generator
-├── players.txt # Player names input file (one name per line)
-├── playerdata.txt # Player task counts and base scores input file
-├── tasks.txt # List of tasks to assign to players
+├── main.cpp              # Main C++ source file
+├── randgen.h            # Header for RandGen random number generator
+├── players.txt          # Player names input file
+├── playerdata.txt       # Player task counts and base scores
+└── tasks.txt            # List of tasks to assign
+```
 
+## 💻 Installation
 
----
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/player-task-simulation.git
+cd player-task-simulation
+```
 
-## 🧩 Features
-
-- Load player names dynamically from a file  
-- Load each player's task count and base score  
-- Load a global list of task types  
-- Assign tasks to players (currently hardcoded)  
-- Simulate dice rolls to generate scores  
-- Display player statistics and task distributions  
-- Identify and display the highest scorer  
-- Show the count of dice rolls resulting in a six  
-- Interactive, console-based menu system  
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- A C++ compiler supporting **C++11** or higher  
-- The `randgen.h` header file (for the RandGen class used for random number generation)  
-
-### Compilation
+2. Compile the program:
+```bash
 g++ -o game main.cpp
-### Run the game
+```
+
+3. Run the game:
+```bash
 ./game
+```
 
+## 🎮 How to Play
 
+1. Prepare input files:
+   - `players.txt`: List of player names
+   - `playerdata.txt`: Task counts and base scores
+   - `tasks.txt`: Available tasks
 
+2. Start the game and follow the menu options:
+   - View player statistics
+   - Check highest scorer
+   - Display task assignments
+   - View dice roll statistics
 
-## 🧠 How It Works
-The program prompts the user to input the names of three files:
+## 📊 Game Statistics
 
-players.txt for player names
+The game tracks various statistics including:
+- Individual player scores
+- Task distribution
+- Dice roll results
+- Number of sixes rolled
+- Highest scoring player
 
-playerdata.txt for task counts and base scores
+## 🎲 Game Rules
 
-tasks.txt for the list of tasks
+1. Players are loaded from the input file
+2. Each player is assigned tasks
+3. Dice rolls determine score modifiers
+4. Final scores are calculated based on:
+   - Base scores
+   - Task completion
+   - Dice roll results
 
-Players are loaded and initialized from players.txt.
+## 👤 Author
 
-Each player's task count and base score are read from playerdata.txt.
+Mert Ali Celik
 
-Tasks are read from tasks.txt (task assignment is hardcoded).
+## 🙏 Acknowledgments
 
-The game simulates dice rolls for each player, combining task assignment and roll results to compute final scores.
-
-An interactive menu allows the user to:
-
-View player statistics
-
-See the highest scorer
-
-Display task assignment counts
-
-Check how many times the number six was rolled across all players
-
-Feel free to fork, star, and contribute to this project!
-Happy gaming! 🎮
+- C++ Standard Library
+- Open-source community
+- Contributors and testers
+- Educational resources
