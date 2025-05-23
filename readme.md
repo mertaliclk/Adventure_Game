@@ -1,7 +1,6 @@
 # Player Task Simulation Game
 
 ![C++](https://img.shields.io/badge/C++-11%2B-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
 ![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey)
 
 A turn-based task simulation game implemented in C++ that demonstrates file I/O operations, data structures, and interactive menu-driven functionality.
